@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Xuân Yến</title>
+<style>
+  body {
+    font-family: Poppins, sans-serif;
+    background: #f0f4f8;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    max-width: 700px;
+    width: 100%;
+    overflow-y: auto;
+    max-height: 95vh;
+  }
+
+  .avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 12px;
+    display: block;
+  }
+
+  .gallery {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+
+  .gallery img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  h1, h2, p {
+    color: #333;
+    margin: 6px 0;
+  }
+
+  .video-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    margin: 18px auto 6px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  }
+
+  .video-wrap::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
+
+  .video-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .song-link {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 14px;
+    background: #2fae4b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: transform .15s ease;
+  }
+
+  .song-link:hover { transform: translateY(-3px); }
+
+  .note {
+    font-size: 13px;
+    color: #666;
+    margin-top: 8px;
+  }
+</style>
+</head>
+
+<body>
+  <div class="card">
+    <!-- Ảnh đại diện -->
+    <img class="avatar" src="https://i.pinimg.com/736x/7f/51/dc/7f51dc9b464f282ae7308e9b8fca0be0.jpg" alt="Xuân Yến">
+
+    <h1>Xuân Yến</h1>
+    <h2>Lớp 12SĐ - THPT Chuyên Bến Tre</h2>
+
+    <!-- Bộ sưu tập ảnh -->
+    <div class="gallery">
+      <img src="https://i.pinimg.com/1200x/29/bf/56/29bf566d57f8cff628f35c2715d9f299.jpg" alt="ảnh 1">
+      <img src="https://i.pinimg.com/736x/e5/36/3d/e5363d53d008181414d0cb4ecb7d9950.jpg" alt="ảnh 2">
+      <img src="https://i.pinimg.com/736x/82/a1/50/82a15066e1554597f88aaae2d7c6b135.jpg" alt="ảnh 3">
+    </div>
+ <h1> Bài hát yêu thích của tôi 💚</h1>
+
+    <!-- Nút mở bài hát 1 -->
+    <a class="song-link" href="https://youtu.be/HhcTaxixdSI?si=FdlQvOVNeXPDH78K" target="_blank" rel="noopener noreferrer">
+      Mở bài hát trên YouTube
+    </a>
+
+    <!-- Nút mở bài hát 2 -->
+    <a class="song-link" href="https://youtu.be/4z2LgRNWifM?si=ADozcYa7zivD1SAE" target="_blank" rel="noopener noreferrer">
+      Mở bài hát trên YouTube
+    </a>
+
+    <p class="note">Hai bài hát yêu thích của tôi 💚</p>
+  </div>
+</body>
+</html>
